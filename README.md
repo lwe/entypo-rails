@@ -1,6 +1,14 @@
-# Entypo::Rails
+# entypo-rails
 
-TODO: Write a gem description
+An asset pipeline plugin for Rails to easily add the [Entypo](http://www.entypo.com/)
+icon font faces and an initial set of icon classes.
+
+## Entypo
+
+The [Entypo](http://www.entypo.com/) pictograms by Daniel Bruce http://www.entypo.com/
+are provided in `vendor`. These pictograms are licensed under
+[CC BY 3.0](http://creativecommons.org/licenses/by-sa/3.0/) and the font unter
+[SIL Open Font License](http://scripts.sil.org/OFL).
 
 ## Installation
 
@@ -11,10 +19,6 @@ Add this line to your application's Gemfile:
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install entypo-rails
 
 ## Usage
 
