@@ -6,7 +6,7 @@ require "entypo-rails/version"
 # It basically ensures that vendor/assets/fonts is on the asset
 # pipeline path.
 module Entypo
-  class Engine << ::Rails::Engine
-    config.assets.paths << File.expand_path "../../vendor/assets/fonts", __FILE__
+  class Engine < ::Rails::Engine
+    config.assets.paths << File.expand_path("../../vendor/assets/fonts", __FILE__)
   end
 end
