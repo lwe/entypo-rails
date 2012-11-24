@@ -4,8 +4,8 @@ require File.expand_path('../lib/entypo-rails/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Lukas Westermann", "Marco Plüss"]
   gem.email         = ["lukas@at-point.ch", "marco@at-point.ch"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Rails asset pipeline plugin and CSS mappings for the Entypo pictograms by Daniel Bruce http://www.entypo.com}
+  gem.summary       = %q{Rails asset pipeline plugin to provide Entypo icons.}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
