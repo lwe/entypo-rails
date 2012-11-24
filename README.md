@@ -25,7 +25,7 @@ And then execute:
 Either use the provided mappings, based on `icons-...` and the `:before`:
 
 ```scss
-//= require "entypo"
+//= require entypo
 ```
 
 ```html
@@ -36,9 +36,9 @@ or just include the entypo and entypo-social font faces and do the font face
 mappings yourself, see http://www.entypo.com/characters/ for possible characters:
 
 ```scss
-//= require "entypo-fonts"
+//= require entypo-fonts
 
-i.cool:before { content: "👍"; };
+i.cool:before { content: "\1F44D"; };
 ```
 
 ```html
