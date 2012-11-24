@@ -22,7 +22,28 @@ And then execute:
 
 ## Usage
 
-TODO: Write usage instructions here
+Either use the provided mappings, based on `icons-...` and the `:before`:
+
+```scss
+//= require "entypo"
+```
+
+```html
+This is cool <i class="icon-thumbs-up"></i>.
+```
+
+or just include the entypo and entypo-social font faces and do the font face
+mappings yourself, see http://www.entypo.com/characters/ for possible characters:
+
+```scss
+//= require "entypo-fonts"
+
+i.cool:before { content: "👍"; };
+```
+
+```html
+This is cool <i class="cool"></i>.
+```
 
 ## Contributing
 
