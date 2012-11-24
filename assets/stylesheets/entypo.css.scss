@@ -1,0 +1,13 @@
+@import "entypo-fonts";
+@charset "UTF-8";
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: entypo;
+  font-style: normal;
+  display: inline-block;
+  width: 1.1em;
+  margin-right: .1em;
+  text-align: center;
+}
+
+.icon-rocket:before { content: "🚀"; };
