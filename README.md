@@ -25,10 +25,12 @@ And then execute:
 Either use the provided mappings, based on `icons-...` and the `:before`:
 
 ```scss
+// application.css[.scss]
 //= require entypo
 ```
 
 ```html
+<!-- some_template.html... -->
 This is cool <i class="icon-thumbs-up"></i>.
 ```
 
@@ -36,12 +38,16 @@ or just include the entypo and entypo-social font faces and do the font face
 mappings yourself, see http://www.entypo.com/characters/ for possible characters:
 
 ```scss
+// application.css[.scss]
 //= require entypo-fonts
 
-i.cool:before { content: "\1F44D"; };
+// icons.css.scss (or wherever)
+i.cool { font-family: 'entypo' }
+i.cool:before { content: "\1F44D"; }
 ```
 
 ```html
+<!-- some_template.html... -->
 This is cool <i class="cool"></i>.
 ```
 
