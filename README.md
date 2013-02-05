@@ -27,6 +27,7 @@ Either use the provided mappings, based on `icons-...` and the `:before`:
 ```scss
 // application.css[.scss]
 //= require entypo
+@charset "UTF-8";
 ```
 
 ```html
@@ -40,6 +41,7 @@ mappings yourself, see http://www.entypo.com/characters/ for possible characters
 ```scss
 // application.css[.scss]
 //= require entypo-fonts
+@charset "UTF-8";
 
 // icons.css.scss (or wherever)
 i.cool { font-family: 'entypo' }

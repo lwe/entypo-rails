@@ -1,7 +1,7 @@
 module Entypo
 
   # Gem version
-  VERSION = "1.0.1"
+  VERSION = "1.0.2"
 
   # Entypo font version
   FONT_VERSION = "2.0-20121031"
