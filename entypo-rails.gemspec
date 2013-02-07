@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/entypo-rails/version', __FILE__)
+require File.expand_path('../lib/entypo/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Lukas Westermann", "Marco Pluess"]
@@ -17,5 +17,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Entypo::VERSION
 
-  gem.add_dependency "railties", "~> 3.1"
+  gem.required_ruby_version = '>= 1.9'
+
+  gem.add_dependency "railties", ">= 3.1", "<= 5"
 end
