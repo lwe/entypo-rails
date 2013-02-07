@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>entypo-rails: charmap <%= Entypo::VERSION %></title>
+    <%= stylesheet_link_tag 'entypo' %>
+  </head>
+  <body>
+    <ul>
+      <% @icons.each do |icon| %>
+        <li>
+          <i class="icon <%= icon.klass %>"></i>
+          <strong class="css"><%= ".#{icon.klass}" %></strong>
+          <span class="codepoint"><%= "U+#{icon.codepoint.upcase}" %></span>
+        </li>
+      <% end %>
+    </ul>
+  </body>
+</html>
