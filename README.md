@@ -35,8 +35,9 @@ Either use the provided mappings, based on `icons-...` and the `:before`:
 This is cool <i class="icon-thumbs-up"></i>.
 ```
 
-or just include the entypo font face and do the mappings yourself,
-see http://www.entypo.com/characters/ for possible characters:
+or just include the entypo font face and do the mappings yourself, go to
+http://localhost:3000/_entypo/charmap in your browser for a list of all
+unicode codepoints and CSS classes.
 
 ```scss
 // application.css[.scss]
