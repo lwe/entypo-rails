@@ -35,8 +35,8 @@ Either use the provided mappings, based on `icons-...` and the `:before`:
 This is cool <i class="icon-thumbs-up"></i>.
 ```
 
-or just include the entypo and entypo-social font faces and do the font face
-mappings yourself, see http://www.entypo.com/characters/ for possible characters:
+or just include the entypo font face and do the mappings yourself,
+see http://www.entypo.com/characters/ for possible characters:
 
 ```scss
 // application.css[.scss]
@@ -52,6 +52,21 @@ i.cool:before { content: "\1F44D"; }
 <!-- some_template.html... -->
 This is cool <i class="cool"></i>.
 ```
+
+## Changes
+
+_2.0.0_
+
+- **Breaking**: combined entyo and entypo social font, so `entypo-social` font family no longer exists
+- #2, #3, fixed display issues on Opera
+
+_1.0.2_
+
+- Bugfix release for Rails asset pipeline
+
+_1.0.0_
+
+- Initial release, with entypo fonts from 2012-10-31
 
 ## Contributing
 
