@@ -11,8 +11,8 @@ Gem::Specification.new do |gem|
   gem.licenses      = ['MIT', 'CC BY 3.0', 'SIL Open Font License']
 
   gem.files         = %w{.gitignore Gemfile Rakefile README.md LICENSE entypo-rails.gemspec} + Dir['**/*.{rb,scss,eot,svg,ttf,woff}']
-  gem.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  gem.test_files    = spec.files.grep(%r{^(test|spec|features)/})
+  gem.executables   = gem.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
 
   gem.name          = "entypo-rails"
   gem.require_paths = ["lib"]
