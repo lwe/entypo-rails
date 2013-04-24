@@ -56,6 +56,10 @@ This is cool <i class="cool"></i>.
 
 ## Changes
 
+_2.0.1_
+
+- Rails 4 compatibility: only css & js files are precompiled from vendor/assets
+
 _2.0.0_
 
 - **Breaking**: combined entyo and entypo social font, so `entypo-social` font family no longer exists
