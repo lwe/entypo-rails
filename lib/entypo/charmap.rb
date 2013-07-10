@@ -16,7 +16,7 @@ module Entypo
     #
     # Returns Charmap instance.
     def self.instance
-      @@instance ||= self.new File.expand_path('../../assets/stylesheets/entypo.css.scss', __FILE__)
+      @@instance ||= self.new File.expand_path('../../../app/assets/stylesheets/entypo.css.scss', __FILE__)
     end
 
     # Public: Returns Array of icons.
