@@ -56,6 +56,11 @@ This is cool <i class="cool"></i>.
 
 ## Changes
 
+_2.0.2_
+
+- Fix /_entypo/charmap to load correct stylesheet from app/assets
+- Switch to use UTF-8 encoded chars, by @michaelkirk
+
 _2.0.1_
 
 - Rails 4 compatibility: only css & js files are precompiled from vendor/assets
