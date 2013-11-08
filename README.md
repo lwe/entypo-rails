@@ -54,6 +54,21 @@ i.cool:before { content: "\1F44D"; }
 This is cool <i class="cool"></i>.
 ```
 
+## Troubleshooting
+
+**In production, the fonts are digested to entypo-
+4a74efb3ed26fe0c57556bcc0b7e871f... Meanhwile it's just entypo.eot in the CSS
+file, without the digest. Therefore the font cannot be loaded!**
+
+When compiling assets ensure to set the correct `RAILS_ENV`, otherwise assets
+or not digested in the CSS files. See
+[this discussion](https://github.com/lwe/entypo-rails/pull/6) for more, or
+simply ensure to run:
+
+```bash
+RAILS_ENV=production rake assets:precompile
+```
+
 ## Changes
 
 _2.0.2_
