@@ -74,6 +74,10 @@ RAILS_ENV=production rake assets:precompile
 
 ## Changes
 
+_2.1.0_
+
+- Added webkit font smooting #8, by @vojto
+
 _2.0.2_
 
 - Fix /_entypo/charmap to load correct stylesheet from app/assets
