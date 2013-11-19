@@ -76,7 +76,7 @@ RAILS_ENV=production rake assets:precompile
 
 _2.1.0_
 
-- Added webkit font smooting #8, by @vojto
+- Added webkit font smooting [#8](https://github.com/lwe/entypo-rails/pull/8), by @vojto
 
 _2.0.2_
 
