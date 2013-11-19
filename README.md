@@ -33,11 +33,15 @@ Either use the provided mappings, based on `icons-...` and the `:before`:
 ```html
 <!-- some_template.html... -->
 This is cool <i class="icon-thumbs-up"></i>.
+Fork it on <i class="icon-social-github"></i>.
 ```
 
 or just include the entypo font face and do the mappings yourself, go to
 http://localhost:3000/_entypo/charmap in your browser for a list of all
-unicode codepoints and CSS classes.
+unicode codepoints and CSS classes. This is only available in development
+mode. Alternatively check out
+https://github.com/lwe/entypo-rails/blob/master/app/assets/stylesheets/entypo.css.scss,
+the social font is prefixed with `.icon-social-`.
 
 ```scss
 // application.css[.scss]
