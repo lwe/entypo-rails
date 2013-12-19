@@ -90,6 +90,25 @@ and append:
 Entypo.charmap = true
 ```
 
+#### Customize the charmap path (or add authorization etc.)
+
+To use a custom URL for to display the charmap, first disable the automatic
+route generation by adding an initializer e.g. `config/initializers/entypo.rb`
+with:
+
+```ruby
+Entypo.charmap = false
+```
+
+Then add a new route to your application's `config/routes.rb` file:
+
+```ruby
+Your::Application.routes.draw do
+  # other routes...
+  get '/custom/path/to/charmap', to: 'entypo/charmap#index'
+end
+```
+
 ## Troubleshooting
 
 **The prefix `icon` clashes with the prefix defined by
@@ -116,8 +135,9 @@ RAILS_ENV=production rake assets:precompile
 
 ## Changes
 
-_2.2.0_
+_2.2.1_
 
+- Ensure .erb files are included within packaged gem
 - Fixed route drawing code to enable `/entypo/charmap` again
 - Added icon prefix option, based on [#9](https://github.com/lwe/entypo-rails/pull/9) thx @xdite
 
