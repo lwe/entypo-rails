@@ -116,6 +116,11 @@ RAILS_ENV=production rake assets:precompile
 
 ## Changes
 
+_2.2.0_
+
+- Fixed route drawing code to enable `/entypo/charmap` again
+- Added icon prefix option, based on [#9](https://github.com/lwe/entypo-rails/pull/9) thx @xdite
+
 _2.1.0_
 
 - Added webkit font smooting [#8](https://github.com/lwe/entypo-rails/pull/8), by @vojto
