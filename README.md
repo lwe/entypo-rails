@@ -20,6 +20,10 @@ And then execute:
 
     $ bundle
 
+Then start your server and open
+
+    http://localhost:3000/entypo/charmap
+
 ## Usage
 
 Either use the provided mappings, based on `icons-...` and the `:before`:
@@ -37,7 +41,7 @@ Fork it on <i class="icon-social-github"></i>.
 ```
 
 or just include the entypo font face and do the mappings yourself, go to
-http://localhost:3000/_entypo/charmap in your browser for a list of all
+http://localhost:3000/entypo/charmap in your browser for a list of all
 unicode codepoints and CSS classes. This is only available in development
 mode. Alternatively check out [entypo.css.scss](https://github.com/lwe/entypo-rails/blob/master/app/assets/stylesheets/entypo.css.scss),
 the social font is prefixed with `.icon-social-`.
@@ -57,7 +61,45 @@ i.cool:before { content: "\1F44D"; }
 This is cool <i class="cool"></i>.
 ```
 
+## Options
+
+#### Change the `icon` prefix
+
+Simply add an initializer like e.g. `config/initializers/entypo.rb` and add:
+
+```ruby
+Entypo.css_prefix = "my-icon"
+```
+
+After setting a new prefix restart your server and ensure to clear the Rails
+asset caches in `tmp/cache/asset`, otherwise the new prefix might not be
+picked up correctly.
+
+**Note**: that the value is not checked, thus ensure to use onlu valid CSS
+class names.
+
+#### Enable the `/entypo/charmap` in a non-development environment
+
+By default entypo-rails only enables the `/entypo/charmap` route in the
+development environment. To enable it in another environment open the
+environment specific configuration file from `config/environments/<env>.rb`
+and append:
+
+```ruby
+# at the end of the file...
+Entypo.charmap = true
+```
+
 ## Troubleshooting
+
+**The prefix `icon` clashes with the prefix defined by
+[bootstrap](http://getbootstrap.com/2.3.2/base-css.html#icons) and thus I'm
+not able to use entypo icons.**
+
+The prefix can be changed by setting `Entypo.css_prefix = "e-icon"` in an
+initializer. Ensure that after changing the prefix the caches in
+`tmp/cache/assets` should be cleared, otherwise it can happen that the prefix
+is not picked up during development.
 
 **In production, the fonts are digested to entypo-
 4a74efb3ed26fe0c57556bcc0b7e871f... Meanhwile it's just entypo.eot in the CSS

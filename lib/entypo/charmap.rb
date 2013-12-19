@@ -16,7 +16,7 @@ module Entypo
     #
     # Returns Charmap instance.
     def self.instance
-      @@instance ||= self.new File.expand_path('../../../app/assets/stylesheets/entypo.css.scss', __FILE__)
+      @@instance ||= self.new File.expand_path('../../../app/assets/stylesheets/entypo.css.scss.erb', __FILE__)
     end
 
     # Public: Returns Array of icons.
@@ -36,8 +36,8 @@ module Entypo
     private
 
     def load(path)
-      File.read(path).split("\n").map do |line|
-        if line =~ %r{\A\.(icon-[a-z0-9\-]+):before.*/\* ([0-9a-f]+)}
+      ERB.new(File.read(path)).result.split("\n").map do |line|
+        if line =~ %r{\A\.(#{Entypo.css_prefix}-[a-z0-9\-]+):before.*/\* ([0-9a-f]+)}
           Icon.new($1, $2)
         end
       end.compact.sort
