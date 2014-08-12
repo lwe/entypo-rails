@@ -8,9 +8,9 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{Rails asset pipeline plugin to provide Entypo icons.}
   gem.homepage      = ""
 
-  gem.licenses      = ['MIT', 'CC BY 3.0', 'SIL Open Font License']
+  gem.licenses      = ['MIT', 'SIL Open Font License']
 
-  gem.files         = %w{.gitignore Gemfile Rakefile README.md LICENSE entypo-rails.gemspec} + Dir['**/*.{rb,erb,scss,eot,svg,ttf,woff}']
+  gem.files         = %w{.gitignore Gemfile Rakefile README.md LICENSE LICENSE_ENTYPO entypo-rails.gemspec} + Dir['**/*.{rb,erb,scss,eot,svg,ttf,woff}']
   gem.executables   = gem.files.grep(%r{^bin/}) { |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
 
