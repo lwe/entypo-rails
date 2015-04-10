@@ -23,5 +23,8 @@ module Entypo
   # Dummy engine so that lib/assets/stylesheets and vendor/assets/fonts
   # are picked up by Rails asset pipeline.
   class Engine < ::Rails::Engine
+    initializer :assets do |config|
+      Rails.application.config.assets.precompile += %w{ entypo.css } if Entypo.charmap?
+    end
   end
 end
