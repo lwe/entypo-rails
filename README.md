@@ -29,7 +29,7 @@ Then start your server and open
 Either use the provided mappings, based on `icons-...` and the `:before`:
 
 ```scss
-// application.css[.scss]
+// application.css
 //= require entypo
 @charset "UTF-8";
 ```
@@ -43,15 +43,15 @@ Fork it on <i class="icon-social-github"></i>.
 or just include the entypo font face and do the mappings yourself, go to
 http://localhost:3000/entypo/charmap in your browser for a list of all
 unicode codepoints and CSS classes. This is only available in development
-mode. Alternatively check out [entypo.css.scss](https://github.com/lwe/entypo-rails/blob/master/app/assets/stylesheets/entypo.css.scss),
+mode. Alternatively check out [entypo.scss](https://github.com/lwe/entypo-rails/blob/master/app/assets/stylesheets/entypo.scss),
 the social font is prefixed with `.icon-social-`.
 
 ```scss
-// application.css[.scss]
+// application.css
 //= require entypo-fonts
 @charset "UTF-8";
 
-// icons.css.scss (or wherever)
+// icons.scss (or wherever)
 i.cool { font-family: 'entypo' }
 i.cool:before { content: "\1F44D"; }
 ```
@@ -134,6 +134,16 @@ RAILS_ENV=production rake assets:precompile
 ```
 
 ## Changes
+
+_3.0.0_
+
+- Set minimum requirement to Rails 4.1+
+- Fixed deprecation warnings [#15](https://github.com/lwe/entypo-rails/issues/15)
+- Fixed entypo font previews at `/entypo/charmap`
+
+_2.2.3_
+
+- Fixed `google-plus` icon names, [#16](https://github.com/lwe/entypo-rails/pull/16) by @medinarodel
 
 _2.2.1_
 
