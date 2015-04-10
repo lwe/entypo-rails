@@ -12,11 +12,11 @@ module Entypo
       end
     end
 
-    # Public: Access the shared instance based on our default entypo.css.scss file.
+    # Public: Access the shared instance based on our default entypo.scss file.
     #
     # Returns Charmap instance.
     def self.instance
-      @@instance ||= self.new File.expand_path('../../../app/assets/stylesheets/entypo.css.scss.erb', __FILE__)
+      @@instance ||= self.new File.expand_path('../../../app/assets/stylesheets/entypo.scss.erb', __FILE__)
     end
 
     # Public: Returns Array of icons.
