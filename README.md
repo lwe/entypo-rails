@@ -30,7 +30,7 @@ Either use the provided mappings, based on `icons-...` and the `:before`:
 
 ```scss
 // application.css
-//= require entypo
+*= require entypo
 @charset "UTF-8";
 ```
 
